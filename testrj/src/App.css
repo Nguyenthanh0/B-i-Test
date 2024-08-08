@@ -1,0 +1,183 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+
+/* Định dạng tiêu đề */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Định dạng cho danh sách todo */
+.todo-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Định dạng cho các checkbox */
+.todo-list input[type="checkbox"] {
+  margin-right: 15px;
+  /* Đảm bảo có khoảng cách giữa checkbox và text */
+}
+
+/* Định dạng cho các task đã hoàn thành */
+.completed {
+  text-decoration: line-through;
+  color: #a0a0a0;
+}
+
+/* Định dạng cho nút delete-task */
+button.delete-task {
+  background: none;
+  border: none;
+  color: #f44336;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: auto;
+  transition: color 0.3s;
+}
+
+/* button.delete-task:hover {
+  color: #d32f2f;
+} */
+
+/* Định dạng cho các nút delete-all */
+.footer-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Định dạng cho các checkbox */
+.todo-list input[type="checkbox"] {
+  margin-right: 15px;
+  /* Khoảng cách giữa checkbox và text */
+}
+
+/* Định dạng cho các task đã hoàn thành */
+.completed {
+  text-decoration: line-through;
+  color: #a0a0a0;
+}
+
+
+/* Định dạng cho các nút delete-all */
+.footer-actions {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+}
+
+button.delete-all {
+  background: none;
+  border: none;
+  color: white;
+  background-color: #d32f2f;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+/* Định dạng chung cho các nút filter */
+.filters button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  /* Khoảng cách giữa các nút */
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Định dạng cho nút filter đang được chọn */
+.filters button.active {
+  color: #007bff;
+  /* Màu chữ khi nút được chọn */
+  border-bottom: 2px solid #007bff;
+  /* Đường viền dưới màu xanh */
+
+}
+
+/* Định dạng cho các nút filter khi không được chọn */
+.filters button:not(.active) {
+  color: #333;
+  /* Màu chữ khi nút không được chọn */
+}
+
+/* Định dạng container chứa các nút filter */
+.filters {
+
+  /* Căn giữa các nút */
+  margin-bottom: 20px;
+}
+
+/* Định dạng cho nút Add */
+.add-task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add-task-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-task-container button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-task-container button:hover {
+  background-color: #0056b3;
+}
